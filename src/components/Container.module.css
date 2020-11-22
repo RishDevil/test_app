@@ -1,9 +1,12 @@
 .container {
+  position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #cd00cd;
+  background-color: var(--blue);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .header {
@@ -28,8 +31,8 @@
   width: 100px;
 
   background-color: white;
-  border: 0.5px solid gray;
-  border-radius: 2px;
+  border: 0.5px solid lightgray;
+  border-radius: 4px;
 }
 
 .mainBody {
@@ -45,6 +48,38 @@
   margin-right: 13px;
 }
 .logo {
-  color: #cd00cd;
+  color: var(--blue);
   font-weight: 500;
+}
+
+.cirlce1 {
+  z-index: -10;
+  position: absolute;
+  bottom: -200px;
+  right: -200px;
+  height: 400px;
+  width: 400px;
+  background-color: var(--circle);
+  border-radius: 100%;
+}
+
+.cirlce2 {
+  z-index: -10;
+  position: absolute;
+  bottom: -500px;
+  left: -500px;
+  height: 1000px;
+  width: 1000px;
+  background-color: var(--circle);
+  border-radius: 100%;
+}
+.cirlce3 {
+  position: absolute;
+  top: 90px;
+  right: 270px;
+  height: 150px;
+  width: 150px;
+  background-color: var(--circle);
+  border-radius: 100%;
+  z-index: -10;
 }

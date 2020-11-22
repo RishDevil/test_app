@@ -10,10 +10,10 @@ const Left_side = (props) => {
           {props.port.length > 0 && (
             <div className={styles.sub_container}>
               <div className={styles.title}>Portugal</div>
-              <ul className={styles.ul}>
+              <div className={styles.ul}>
                 {props.port.map((item) => {
                   return (
-                    <li className={styles.li}>
+                    <div className={styles.li}>
                       <div className={styles.value}>{item.value}</div>
                       <div
                         className={styles.delete}
@@ -24,20 +24,20 @@ const Left_side = (props) => {
                         {" "}
                         X
                       </div>
-                    </li>
+                    </div>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           )}
           {props.nicar.length > 0 && (
             <div className={styles.sub_container}>
               {" "}
               <div className={styles.title}>Nicaragua</div>
-              <ul className={styles.ul}>
+              <div className={styles.ul}>
                 {props.nicar.map((item) => {
                   return (
-                    <li className={styles.li}>
+                    <div className={styles.li}>
                       <div className={styles.value}>{item.value}</div>
                       <div
                         className={styles.delete}
@@ -48,34 +48,34 @@ const Left_side = (props) => {
                         {" "}
                         X
                       </div>
-                    </li>
+                    </div>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           )}
           {props.mars.length > 0 && (
             <div className={styles.sub_container}>
               {" "}
               <div className={styles.title}>Marshall Islands</div>
-              <ul className={styles.ul}>
+              <div className={styles.ul}>
                 {props.mars.map((item) => {
                   return (
-                    <li className={styles.li}>
+                    <div className={styles.li}>
                       <div className={styles.value}>{item.value}</div>
                       <div
                         className={styles.delete}
                         onClick={() =>
-                          props.deleteHandle(item.value, "marshall")
+                          props.deleteHandle(item.value, "marchall")
                         }
                       >
                         {" "}
                         X
                       </div>
-                    </li>
+                    </div>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           )}
         </React.Fragment>

@@ -1,19 +1,21 @@
 .container {
   background-color: white;
   min-height: 500px;
-
+  z-index: 600;
   width: 400px;
   border-radius: 5px;
   padding-top: 10px;
   padding-left: 20px;
 }
 .ul {
+  left: 0;
   list-style-type: none;
 }
 
 .country {
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 .sub_container {
   display: flex;
@@ -27,19 +29,64 @@
   justify-content: start;
 }
 .input {
-  background-color: purple;
-  margin-right: 20px;
+  position: absolute;
+  /* height: 0;
+  width: 0; */
+  opacity: 0;
   font-size: 15px;
+  z-index: 1000;
+  color: var(--blue);
 }
+.span {
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border: 0.5px solid grey;
+  border-radius: 3px;
+}
+.input_container {
+  position: relative;
+  margin-right: 50px;
+  height: 100%;
+}
+
 .value {
   font-size: 15px;
   color: gray;
 }
-input:checked ~ .input {
-  background-color: purple;
-}
+
 .li {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+  height: 20px;
+
+  align-content: center;
+}
+.span::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.input:checked ~ .span:after {
+  display: block;
+}
+
+.input:checked ~ .span {
+  background-color: var(--blue);
+}
+
+.span::after {
+  left: 2px;
+  top: -2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

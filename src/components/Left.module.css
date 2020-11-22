@@ -2,13 +2,14 @@
   position: relative;
   background-color: white;
 
-  min-height: 530px;
-
+  height: 500px;
+  overflow-y: scroll;
   width: 400px;
   border-radius: 5px;
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 25px;
 }
+
 .ul {
   list-style-type: none;
 }
@@ -26,14 +27,15 @@
 .title {
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .li {
   display: flex;
   flex-direction: row;
-  width: 340px;
+  width: 370px;
   height: 40px;
-  background-color: lightgray;
+  background-color: #e4e4e4;
   border-radius: 3px;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +45,9 @@
   margin-right: 10px;
   font-size: 15px;
   color: gray;
-  font-weight: 500;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  cursor: pointer;
 }
 .value {
   font-size: 15px;

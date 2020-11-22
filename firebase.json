@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "testapp-82f71",
+    "public": "build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}

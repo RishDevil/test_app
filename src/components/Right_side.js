@@ -6,7 +6,7 @@ const Right_side = (props) => {
     <div className={styles.container}>
       <div className={styles.sub_container}>
         <div className={styles.country}>Portugal</div>
-        <ul className={styles.ul}>
+        <div className={styles.ul}>
           {props.port.map((item) => {
             return (
               <CheckBox
@@ -17,11 +17,11 @@ const Right_side = (props) => {
               />
             );
           })}
-        </ul>
+        </div>
       </div>
       <div className={styles.sub_container}>
         <div className={styles.country}>Nicaragua</div>
-        <ul className={styles.ul}>
+        <div className={styles.ul}>
           {props.nicar.map((item) => {
             return (
               <CheckBox
@@ -32,12 +32,12 @@ const Right_side = (props) => {
               />
             );
           })}
-        </ul>
+        </div>
       </div>
 
       <div className={styles.sub_container}>
         <div className={styles.country}>Marshall Islands</div>
-        <ul className={styles.ul}>
+        <div className={styles.ul}>
           {props.mars.map((item) => {
             return (
               <CheckBox
@@ -48,7 +48,7 @@ const Right_side = (props) => {
               />
             );
           })}
-        </ul>
+        </div>
       </div>
     </div>
   );

@@ -179,7 +179,7 @@ const Container = () => {
     ////////////////////////////////////// list3
     if (name === "marchall") {
       const list = list3;
-
+      console.log(value);
       list.map((item) => {
         if (item.value === value) {
           const list = displayList3;
@@ -228,6 +228,9 @@ const Container = () => {
           />
         </div>
       </div>
+      <span className={styles.cirlce1}></span>
+      <span className={styles.cirlce2}></span>
+      <span className={styles.cirlce3}></span>
     </div>
   );
 };
